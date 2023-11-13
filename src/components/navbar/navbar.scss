@@ -1,1 +1,32 @@
-.Navbar {}
+.Navbar {
+    background-color: #4709CD;
+    color: #FFFFFF;
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 0.6rem;
+    position: fixed;
+    top: 0.5rem;
+
+    .content{
+     padding: 0.5rem;
+     display: inline-flex;
+     justify-content: space-between;
+    }
+
+    .nav-btn{
+        border: 0.15rem solid #9166ED;
+        border-radius: 0.6rem;
+        //font-size: calc(10px + 1vmin);
+
+        //padding: 0.2rem 0.5rem
+        // padding: 0.25rem;
+    }
+    .nav-btn:hover{
+        background-color: #9166ED;
+        //color:#4709CD;
+    }
+
+    #nav-btn-content{
+        display: block;
+    }
+}
