@@ -32,23 +32,26 @@
 /* Media query for mobile screens (up to 767px wide) */
 @media screen and (max-width: 767px) {
   .App-Content {
-    font-size: 14px;
-    padding: 8px;
+    /* font-size: 14px; */
+    font-size: calc(10px + 1vmin);
+    padding: 0.6rem;
   }
 }
 
 /* Media query for tablet screens (768px to 1023px wide) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .App-Content {
-    font-size: 18px;
-    padding: 12px;
+    /* font-size: 18px; */
+    font-size: calc(10px + 1vmin);
+    padding: 0.8rem;
   }
 }
 
 /* Media query for desktop screens (1024px and wider) */
 @media screen and (min-width: 1024px) {
   .App-Content {
-    font-size: 20px;
-    padding: 14px;
+    /* font-size: 20px; */
+    font-size: calc(10px + 2vmin);
+    padding: 0.8rem;
   }
 }
