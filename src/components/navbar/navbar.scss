@@ -24,12 +24,10 @@
         width: -webkit-fill-available;     
     }
 
-    .nav-header{
-        display: inline;
-    }
-    .nav-header-content{
-        display: block;
-    }
+    // .nav-header{
+    // }
+    // .nav-header-content{
+    // }
 
     .nav-btn{
         border: 0.15rem solid #9166ED;
@@ -46,6 +44,7 @@
         padding: 0.25rem;
     }
 
+    //DESKTOP
     @media screen and (min-width: 1024px) {
         .nav-btn-content{
             font-size: calc(10px + 1.5vmin);
