@@ -1,6 +1,10 @@
 .AcademicCourse {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    width: -moz-available;   /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    row-gap: 1rem;
 
     .academic-header-content{
         color: #6A2EEB;
@@ -10,11 +14,12 @@
     .academic-courses{
         display: inline-flex;
         flex-direction: column;
+        row-gap: 1rem
     }
     .academic-courses-content{
         display: flex;
         flex-direction: column;
-        color: #9166ED
+        color: #9166ED;
     }
 
     img{
