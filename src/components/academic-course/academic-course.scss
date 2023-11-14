@@ -1,9 +1,27 @@
 .AcademicCourse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     .academic-header-content{
         color: #6A2EEB;
         font-size: calc(10px + 4vmin);
+    }
+
+    .academic-courses{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .academic-courses-content{
+        display: flex;
+        flex-direction: column;
+        color: #9166ED
+    }
+
+    img{
+        width: 1rem;
+    }
+
+    img.selected{
+        transform: rotate(180deg);
     }
 }
