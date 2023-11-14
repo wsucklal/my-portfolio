@@ -1,0 +1,9 @@
+.AcademicCourse {
+    display: flex;
+    flex-direction: row;
+
+    .academic-header-content{
+        color: #6A2EEB;
+        font-size: calc(10px + 4vmin);
+    }
+}

@@ -5,9 +5,10 @@
     width: -moz-available;   /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
     padding: 2rem;
+    row-gap: 2rem;
 
     .contact-content{
-        padding: 1rem;
+        //padding: 1rem;
         // display: inline-flex;
         // flex-direction: row;
     }
@@ -51,3 +52,10 @@
     }
 
 }
+
+    //DESKTOP
+    @media screen and (min-width: 1024px) {
+        .contact-link{
+            padding-left: 8rem;
+        }
+    }

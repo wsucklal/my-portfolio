@@ -26,6 +26,14 @@ const Contact = () => (
           Send An Email
         </div>
       </div>
+      <div className="contact-link-content">
+        <div className=" contact-link-pic">
+          <img src="/assets/images/Github.png"></img>
+        </div>
+        <div className=" contact-link-text">
+          Github
+        </div>
+      </div>
     </div>
   </div>
 );
