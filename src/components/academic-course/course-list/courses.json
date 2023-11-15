@@ -1,0 +1,32 @@
+{
+    "courses2023":{
+        "courses":[
+            {
+            "name":"Networking: Principles, Protocols and Architectures",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Networking: Principles, Protocols and Architectures",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            }
+        ],
+        "year":2023
+    },
+    "courses2022":{
+        "courses":[
+            {
+            "name":"hey",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Networking: Principles, Protocols and Architectures",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            }
+        ],
+        "year":2022
+    }
+}

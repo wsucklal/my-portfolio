@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 4rem;
+    height: 100vh;
 
     .bio-content{
         padding: 0.5rem;
@@ -48,9 +49,9 @@
 
 @media screen and (min-width: 1024px) {
     .Bio{
-        padding: 1rem;
+        //padding-top: 0rem;
+        padding: 2rem;
         column-gap: 5rem;
-        padding-top: 6rem;
     }
     .bio-text{
         

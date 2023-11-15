@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './academic-course.scss';
+import CourseList from './course-list/course-list'
 
 const AcademicCourse = () => {
   
@@ -24,11 +25,11 @@ const AcademicCourse = () => {
       <div className="academic-courses academic-content">
       <div className="academic-courses-content">
         <div onClick={handleOpen2023}>2023 <img className={open2023? 'selected': null} src="/assets/images/dropdown.png"></img></div>
-            {open2023 ? <div>Is Open</div> : <div></div>}
+            {open2023 ? <CourseList year= {2023}/> : <div></div>}
         </div>
         <div className="academic-courses-content">
         <div onClick={handleOpen2022}>2022 <img className={open2022? 'selected': null} src="/assets/images/dropdown.png"></img></div>
-            {open2022 ? <div>Is Open</div> : <div></div>}
+            {open2022 ? <CourseList year= {2022}/> : <div></div>}
         </div>
       </div>
     </div>
