@@ -17,12 +17,12 @@ const CourseList = (props) => {
     break
   }
   courses.forEach((c) =>{
-    courseList.push(<li><CourseCard name={c.name} desc={c.desc} link={c.link} /></li>)
+    courseList.push(<CourseCard name={c.name} desc={c.desc} link={c.link} />)
   })
 
   return(
     <div className="CourseList" data-testid="CourseList">
-      <ul>{courseList}</ul>
+      {courseList}
     </div>
   );
 };

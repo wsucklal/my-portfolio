@@ -2,12 +2,14 @@
     border: solid 3px #9166ED;
     background-color: #FFFFFF;
     border-radius: 1.2rem; 
+    min-width: 20rem;
+    max-width: 20rem;
     //max-width: calc(50% - 5rem);
 
     .course-header{
         border-bottom: solid 3px #9166ED;
         background-color: #9166ED;
-        color: #FFFFFF;
+        color: #6A2EEB;
         border-top-right-radius: 0.8rem; 
         border-top-left-radius: 0.8rem; 
 
