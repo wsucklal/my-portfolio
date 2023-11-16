@@ -1,0 +1,59 @@
+.Bio {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    height: 100vh;
+
+    .bio-content{
+        padding: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio-pic{
+
+    }
+
+    .bio-pic-content{
+        border: 0.3rem solid #9166ED;
+        border-radius: 50%;
+        height:40vmin;
+        width: 40vmin;
+    }
+
+    img{
+        border-radius: 50%;
+        height:40vmin;
+        width: 40vmin;
+    }
+
+    .bio-text{
+
+    }
+    
+    .bio-text-content{
+        padding: 1rem;
+    }
+
+}
+
+
+        /* Media query for tablet screens (768px to 1023px wide) */
+@media screen and (max-width: 1023px) {
+    .Bio {
+    /* font-size: 18px; */
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Bio{
+        //padding-top: 0rem;
+        padding: 2rem;
+        column-gap: 5rem;
+    }
+    .bio-text{
+        
+    }
+  }

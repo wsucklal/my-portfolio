@@ -1,0 +1,23 @@
+.CourseList {
+    // white-space: nowrap; 
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: scroll;
+    scrollbar-color: #9166ED;
+
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline;
+    }
+}

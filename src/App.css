@@ -13,26 +13,45 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-Content {
+  min-height: 100vh;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #1E1E1E;
+  padding: 0.5rem 2rem 0rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query for mobile screens (up to 767px wide) */
+@media screen and (max-width: 767px) {
+  .App-Content {
+    /* font-size: 14px; */
+    font-size: calc(10px + 1vmin);
+    padding: 0.6rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Media query for tablet screens (768px to 1023px wide) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .App-Content {
+    /* font-size: 18px; */
+    font-size: calc(10px + 1vmin);
+    padding: 0.8rem;
+  }
+}
+
+/* Media query for desktop screens (1024px and wider) */
+@media screen and (min-width: 1024px) {
+  .App-Content {
+    /* font-size: 20px; */
+    font-size: calc(10px + 1.5vmin);
+    padding: 0.8rem;
   }
 }
