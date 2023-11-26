@@ -11,7 +11,7 @@ const Navbar = () => (
         <a id="" href='#Bio' className="nav-btn-content nav-btn">
           Who Am I?
         </a>
-        <a id="" href='#AcademicCourse' className="nav-btn-content nav-btn">
+        <a id="" href='#Project' className="nav-btn-content nav-btn">
           My Experience
         </a>
         <a id="" href='#Contact' className="nav-btn-content nav-btn">
