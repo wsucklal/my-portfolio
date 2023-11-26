@@ -6,16 +6,36 @@
     max-width: 20rem;
     //max-width: calc(50% - 5rem);
 
+
     .course-header{
         border-bottom: solid 3px #9166ED;
         background-color: #9166ED;
         color: #6A2EEB;
         border-top-right-radius: 0.8rem; 
-        border-top-left-radius: 0.8rem; 
+        border-top-left-radius: 0.8rem;
+        height: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0.5rem;
+        //max-lines: 1;
 
     }
+
     .course-desc{
         font-size: calc(10px + 0.8vmin);
+        //height: 20vh;
+        padding: 0rem 1rem;
+        p { 
+            //max-lines: 3;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            text-align: center;
+            //white-space: nowrap;
+            overflow:hidden;
+            //text-overflow: ellipsis;
+        }
     }
 
     .course-link{
@@ -24,5 +44,11 @@
         color: #6A2EEB;
         border-bottom-right-radius: 0.8rem; 
         border-bottom-left-radius: 0.8rem; 
+
+    }
+
+    .course-link-content {
+        text-decoration: none;
+        color: #6A2EEB;
     }
 }

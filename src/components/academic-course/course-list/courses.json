@@ -2,30 +2,51 @@
     "courses2023":{
         "courses":[
             {
-            "name":"Networking: Principles, Protocols and Architectures",
+            "name":"Software Engineering Design II",
+            "desc":"The course emphasizes teamwork, and hones your creative and entrepreneurial skills while putting the methods and techniques learned in past courses into real practice. The project involves forming four- to six-person teams to analyze, design, build, test, and evaluate a software system to meet the requirements of a real independent user. The main objective of this course is the development of a new generation of innovators.",
+            "link":"https://www.eng.uwo.ca/electrical/undergraduate/Updated-SE4450-CourseOutline2023.pdf"
+            },
+            {
+            "name":"Software Testing and Maintenance",
+            "desc":"The course focuses on software testing, verification and validation, and maintenance issues. Topics include review/inspection, testing techniques, levels of testing (unit, integration, system, acceptance, regression, etc.), and testing tools (static and dynamic). Review of software tools/techniques to manage changes in software and to control the evolution of a software project. ",
+            "link":"https://www.eng.uwo.ca/electrical/undergraduate/Updated-SE4452-course-outlines-F2023.pdf"
+            },
+            {
+            "name":"Information Security",
+            "desc":"This course provides an introduction to the topic of information security in the context of network communication. It is intended for students who have some understanding of networks, but not necessarily any background in security. The goal of the course is to provide students with a foundation that will help them to identify, analyze and make appropriate security decisions during the design and deployment of information and network systems.",
+            "link":"https://whisperlab.org/information-security/SE4472-course-outline.pdf"
+            },
+            {
+            "name":"Artificial Intelligence I",
             "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
             "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
             },
             {
-            "name":"Networking: Principles, Protocols and Architectures",
-            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
-            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            "name":"Intro to Machine Learning",
+            "desc":"The objective of this course is to introduce students to the fields of Machine Learning and Data Science. Through this course, the students will learn various algorithms and how they are implemented to solve real-world problems. Students will get hands-on experience in implementing these algorithms using various programming languages and platforms.",
+            "link":"https://www.uwo.ca/stats/graduate/course-outlines/2022-23/DS3000_9000B-2023.pdf"
             },
             {
-                "name":"Networking: Principles, Protocols and Architectures",
-                "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
-                "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            "name":"Cloud Computing: Concepts, Technologies, and Applications",
+            "desc":"The course concentrates on the fundamental elements of cloud computing such as resource virtualization and distributed systems including the main concepts of cloud infrastructures. Laboratory activities will allow students to be exposed to fundamental technologies used by cloud computing such as virtual machines, virtual machine monitors, resource allocations, etc.",
+            "link":"https://www.eng.uwo.ca/electrical/undergraduate/SE4455-ECE9016_Winter20221.pdf"
             },
             {
-                "name":"Networking: Principles, Protocols and Architectures",
-                "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
-                "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            "name":"Engineering Ethics, Sustainable Development and the Law",
+            "desc":"Students analyze the PEO Code of Ethics, legal principles, and leadership character to appreciate their professional responsibility for ethical and equitable engineering practice. Students apply these frameworks to recent engineering cases and in the exploration of the ethics and sustainability of emerging technologies.",
+            "link":"https://www.eng.uwo.ca/tc/undergraduate/ELI4110%20Syllabus%20Winter%202024.pdf"
             },
             {
-                "name":"Networking: Principles, Protocols and Architectures",
-                "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
-                "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            "name":"Artificial Intelligence II",
+            "desc":"In this course we give a brief introduction to three very active areas of Artificial Intellegence: machine learning, natural language processing, and computer vision. The programming assignments will be done in Matlab (short intro to Matlab will be given), and the empthasis of the assignments will be on developing practical applications, such as SPAM detector in email, text categorization, object tracking in videos.",
+            "link":"https://www.csd.uwo.ca/misc/outlines/2017/2017-cs4442-b.pdf"
+            },
+            {
+            "name":"Game Design",
+            "desc":"This course provides an in-depth examination of video game design and best practices to study the issues and challenges that arise when developing games for both entertainment and serious applications. Topics include: the history of video games; game development teams, processes, and management; principles of game design, game play, and balance; game genres and genre-specific design issues; plot, story, and level design; challenge design; ethical issues in video games and the gaming industry; and the future of gaming.",
+            "link":"https://www.csd.uwo.ca/misc/outlines/2021/2021-CS4483-B.pdf"
             }
+
         ],
         "year":2023
     },
