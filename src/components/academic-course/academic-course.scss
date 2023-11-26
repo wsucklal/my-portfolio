@@ -17,17 +17,20 @@
     .academic-courses{
         display: inline-flex;
         flex-direction: column;
-        row-gap: 1rem
+        row-gap: 1rem;
+        border: solid 3px #9166ED;
+        border-radius: 0.8rem;
+        padding: 1rem
     }
     .academic-courses-content{
         display: flex;
         flex-direction: column;
-        color: #9166ED;
+        color: #FFFFFF;
     }
 
     .academic-courses-header{
-        //background-color: #6A2EEB;
-        //border-radius: 8px;
+        background-color: #6A2EEB;
+        border-radius: 8px;
     }
 
     img{

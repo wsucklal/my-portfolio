@@ -27,12 +27,12 @@
             "link":"https://www.uwo.ca/stats/graduate/course-outlines/2022-23/DS3000_9000B-2023.pdf"
             },
             {
-            "name":"Cloud Computing: Concepts, Technologies, and Applications",
+            "name":"Cloud Computing",
             "desc":"The course concentrates on the fundamental elements of cloud computing such as resource virtualization and distributed systems including the main concepts of cloud infrastructures. Laboratory activities will allow students to be exposed to fundamental technologies used by cloud computing such as virtual machines, virtual machine monitors, resource allocations, etc.",
             "link":"https://www.eng.uwo.ca/electrical/undergraduate/SE4455-ECE9016_Winter20221.pdf"
             },
             {
-            "name":"Engineering Ethics, Sustainable Development and the Law",
+            "name":"Engineering Ethics",
             "desc":"Students analyze the PEO Code of Ethics, legal principles, and leadership character to appreciate their professional responsibility for ethical and equitable engineering practice. Students apply these frameworks to recent engineering cases and in the exploration of the ethics and sustainability of emerging technologies.",
             "link":"https://www.eng.uwo.ca/tc/undergraduate/ELI4110%20Syllabus%20Winter%202024.pdf"
             },
@@ -53,12 +53,57 @@
     "courses2022":{
         "courses":[
             {
-            "name":"hey",
+            "name":"Networking: Principles, Protocols, and Architecture",
             "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
             "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
             },
             {
-            "name":"Networking: Principles, Protocols and Architectures",
+            "name":"Database Management Systems",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Software Project and Process Management",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Web Technologies",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Software Requirements & Analysis",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Microprocessors and Microcomputers",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Theoretical Foundations of Software Engineering",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Computer Networks Applications",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Operating Systems for Software Engineering",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Human-Computer Interaction",
+            "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
+            "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
+            },
+            {
+            "name":"Software Engineering Design I",
             "desc":"This course introduces the fundamental concepts of communication networks. Specifically, it is concerned with network architectures and protocols. The objective of the course is to allow students to develop a thorough understanding of the architectures of networks and the basic principles that allow the transmission of data over the networks.",
             "link":"https://www.eng.uwo.ca/Electrical/undergraduate/ECE4436_2022-23.pdf"
             }

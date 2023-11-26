@@ -18,6 +18,7 @@
         align-items: center;
         display: flex;
         padding: 0.5rem;
+        //align-items: ;
         //max-lines: 1;
 
     }
@@ -31,6 +32,7 @@
             display: -webkit-box;
             -webkit-line-clamp: 8;
             -webkit-box-orient: vertical;
+            color: #6A2EEB;
             text-align: center;
             //white-space: nowrap;
             overflow:hidden;
@@ -51,4 +53,33 @@
         text-decoration: none;
         color: #6A2EEB;
     }
+
+    .course-link-content:hover{
+        color: #FFFFFF;
+    }
+
 }
+
+@media screen and (min-width: 1024px) {
+    .CourseCard{
+        //padding-top: 0rem;
+        min-width: 40rem;
+        max-width: 40rem;
+
+        .course-desc{
+            font-size: calc(10px + 0.8vmin);
+            //height: 20vh;
+            padding: 0rem 1rem;
+            p { 
+                //max-lines: 3;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                text-align: center;
+                //white-space: nowrap;
+                overflow:hidden;
+                //text-overflow: ellipsis;
+            }
+        }
+    }
+  }
