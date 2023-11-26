@@ -8,15 +8,15 @@ const Navbar = () => (
         <div className="nav-header-content">Warren Sucklal</div>
       </div>
       <div id="" className="nav-btns-panel nav-content">
-        <div id="" className="nav-btn-content nav-btn">
+        <a id="" href='#Bio' className="nav-btn-content nav-btn">
           Who Am I?
-        </div>
-        <div id="" className="nav-btn-content nav-btn">
+        </a>
+        <a id="" href='#AcademicCourse' className="nav-btn-content nav-btn">
           My Experience
-        </div>
-        <div id="" className="nav-btn-content nav-btn">
+        </a>
+        <a id="" href='#Contact' className="nav-btn-content nav-btn">
           Contact
-        </div>
+        </a>
       </div>
   </div>
 );

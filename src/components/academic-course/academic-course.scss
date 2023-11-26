@@ -7,6 +7,7 @@
     row-gap: 1rem;
     height: 80vh;
     padding: 1rem;
+    padding-top: 5rem;
 
     .academic-header-content{
         color: #6A2EEB;
@@ -22,6 +23,11 @@
         display: flex;
         flex-direction: column;
         color: #9166ED;
+    }
+
+    .academic-courses-header{
+        //background-color: #6A2EEB;
+        //border-radius: 8px;
     }
 
     img{

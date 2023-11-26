@@ -7,6 +7,7 @@
     padding: 2rem;
     row-gap: 2rem;
     height: 80vh;
+    padding-top: 5rem;
 
     .contact-content{
         //padding: 1rem;
@@ -48,8 +49,15 @@
     }
 
     .contact-link-text{
-        color: #9166ED;
+        color: #6A2EEB;
         font-size: calc(10px + 3vmin);
+        text-decoration: none;
+    }
+
+    .contact-link-content:hover{
+        background-color: #9166ED;
+        padding: 1rem;
+        border-radius: 2rem;
     }
 
 }
