@@ -33,6 +33,7 @@
         flex-direction: row;
         align-items: center;
         column-gap: 2rem;
+        transition: 0.2s;
     }
 
     .contact-link-pic{
@@ -59,7 +60,6 @@
         padding: 1rem;
         border-radius: 2rem;
     }
-
 }
 
     //DESKTOP
