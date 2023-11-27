@@ -8,6 +8,7 @@
     top: 0.5rem;
     width: calc(100% - 1rem);
     text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
 
     .nav-content{
      padding: 0.5rem;
@@ -41,6 +42,8 @@
     }
     .nav-btn:hover{
         background-color: #9166ED;
+        box-shadow: 1px 1px 2px #9166ED;
+        text-shadow: 1px 1px 2px #FFFFFF;
         //color:#4709CD;
     }
 

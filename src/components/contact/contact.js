@@ -14,7 +14,7 @@ const Contact = () => (
         <div className=" contact-link-pic">
           <img src="/assets/images/linkedInLogo.png"></img>
         </div>
-        <a href='https://www.linkedin.com/in/warren-sucklal/' className="contact-link-text">
+        <a href='https://www.linkedin.com/in/warren-sucklal/' target="_blank" className="contact-link-text">
           LinkedIn
         </a>
       </div>
@@ -22,7 +22,7 @@ const Contact = () => (
         <div className=" contact-link-pic">
           <img src="/assets/images/Mail.png"></img>
         </div>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=warrensucklal@gmail.com" className=" contact-link-text">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=warrensucklal@gmail.com" target="_blank" className=" contact-link-text">
           Send An Email
         </a>
       </div>
@@ -30,7 +30,7 @@ const Contact = () => (
         <div className=" contact-link-pic">
           <img src="/assets/images/Github.png"></img>
         </div>
-        <a href='https://github.com/wsucklal' className=" contact-link-text">
+        <a href='https://github.com/wsucklal' target="_blank" className="  contact-link-text">
           Github
         </a>
       </div>

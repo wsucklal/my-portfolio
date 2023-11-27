@@ -21,13 +21,32 @@
         border-radius: 50%;
         height:40vmin;
         width: 40vmin;
+        transition: 0.2s;
+ 
+    
     }
 
     img{
         border-radius: 50%;
         height:40vmin;
         width: 40vmin;
+        transition: 0.2s;
     }
+
+    //img:hover,
+    .bio-pic-content:hover{
+        height:calc(40vmin + 5rem);
+        width: calc(40vmin + 5rem);
+
+        img{
+            height:calc(40vmin + 5rem);
+            width: calc(40vmin + 5rem);
+        }
+    }
+
+
+
+
 
     .bio-text{
     }
