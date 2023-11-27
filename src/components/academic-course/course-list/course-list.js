@@ -12,8 +12,11 @@ const CourseList = (props) => {
     case 2023:
       courses = coursesJOSN.courses2023.courses
     break;
-    case 2022:
-      courses = coursesJOSN.courses2022.courses
+    case 2021:
+      courses = coursesJOSN.courses2021.courses
+    break
+    case 2020:
+      courses = coursesJOSN.courses2020.courses
     break
   }
   courses.forEach((c) =>{
