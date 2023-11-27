@@ -5,6 +5,7 @@ import Bio from './components/bio/bio';
 import Project from './components/project/project'
 import Academics from './components/academic-course/academic-course'
 import Contact from './components/contact/contact';
+import Footer from './components/footer/footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Academics></Academics>
         <Contact></Contact>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
