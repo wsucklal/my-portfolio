@@ -10,11 +10,15 @@
     padding-top: 5rem;
 
     .academic-header-content{
+        
         color: #6A2EEB;
         font-size: calc(10px + 4vmin);
+        text-shadow: 2px 2px 4px #000000;
+
     }
 
     .academic-courses{
+        box-shadow:  2px 2px 4px #000000;
         display: inline-flex;
         flex-direction: column;
         row-gap: 1rem;
@@ -31,6 +35,14 @@
     .academic-courses-header{
         background-color: #6A2EEB;
         border-radius: 8px;
+        text-shadow: 1px 1px 2px #000000;
+        box-shadow:  2px 2px 4px #000000;
+    }
+
+
+    .academic-courses-header:hover{
+        text-shadow: 1px 1px 2px #FFFFFF;
+
     }
 
     img{

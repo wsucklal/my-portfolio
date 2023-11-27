@@ -8,6 +8,7 @@
     row-gap: 2rem;
     height: 80vh;
     padding-top: 5rem;
+    text-shadow: 2px 2px 4px #000000;
 
     .contact-content{
         //padding: 1rem;
@@ -21,6 +22,7 @@
     .contact-header-content{
         color: #6A2EEB;
         font-size: calc(10px + 4vmin);
+        text-shadow: 2px 2px 4px #000000;
     }
     .contact-link{
         display: flex;
@@ -56,9 +58,11 @@
     }
 
     .contact-link-content:hover{
-        background-color: #9166ED;
+        //background-color: #9166ED;
+        text-shadow: 2px 2px 4px #9166ED;
         padding: 1rem;
         border-radius: 2rem;
+        box-shadow: 2px 2px 4px #000000;
     }
 }
 

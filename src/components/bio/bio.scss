@@ -16,6 +16,7 @@
     }
 
     .bio-pic-content{
+        box-shadow:  2px 2px 4px #000000;
         border: 0.3rem solid #9166ED;
         border-radius: 50%;
         height:40vmin;
@@ -29,11 +30,13 @@
     }
 
     .bio-text{
-
     }
     
     .bio-text-content{
+        box-shadow:  2px 2px 4px #000000;
         padding: 1rem;
+        border-radius: 2rem;
+
     }
 
 }
