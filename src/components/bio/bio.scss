@@ -63,19 +63,20 @@
     }
 
     .bio-btn-content{
-        padding: 0.4rem;
-        background-color: #6A2EEB;
-        border:#9166ED 2px solid;
-        color: #FFFFFF;
-        border-radius: 0.6rem;
-        text-decoration: none;
+        //padding: 0.4rem;
+        //background-color: #6A2EEB;
+        //border:#9166ED 2px solid;
+        color: #9166ED;
+        //border-radius: 0.6rem;
+        //text-decoration: none;
         transition: 0.2s;
-        width: 80%;
+        //width: 80%;
     }
     .bio-btn-content:hover{
-        background-color: #9166ED;
-        text-shadow:  1px 1px 2px #FFFFFF;
-        box-shadow:  1px 1px 2px #9166ED;
+        //background-color: #9166ED;
+        text-shadow:  1px 1px 2px #9166ED;
+        color:#9166ED;        
+        //box-shadow:  1px 1px 2px #9166ED;
         //padding: 1rem;
     }
 
