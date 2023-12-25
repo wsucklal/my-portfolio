@@ -1,12 +1,13 @@
 .Contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 120%;
     width: -moz-available;   /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
     padding: 2rem;
     row-gap: 2rem;
-    height: 65vh;
+    height: fit-content;
+    min-height: 65vh;
     padding-top: 5rem;
     text-shadow: 2px 2px 4px #000000;
     //box-shadow: 2px 2px 4px #000000;
