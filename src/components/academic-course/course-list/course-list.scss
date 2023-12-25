@@ -2,7 +2,7 @@
     // white-space: nowrap; 
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 2rem;
     overflow-x: auto; 
     -webkit-overflow-scrolling: touch;
@@ -12,6 +12,13 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     //border-top: 2px solid #9166ED ;
+
+    .courseList-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0.5rem;
+    }
 
     ::-webkit-scrollbar {
         display: none; 

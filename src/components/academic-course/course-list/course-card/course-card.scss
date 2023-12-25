@@ -1,27 +1,35 @@
 .CourseCard {
-    border: solid 3px #9166ED;
-    background-color: #FFFFFF;
+    //border: solid 3px #9166ED;
+    //background-color: #FFFFFF;
     border-radius: 1.2rem; 
-    min-width: 20rem;
-    max-width: 20rem;
+    //min-width: fit-content;
+    //max-width: fit-content;
     display: flex;
     flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
 
     .course-header{
-        border-bottom: solid 3px #9166ED;
-        background-color: #9166ED;
-        color: #6A2EEB;
-        border-top-right-radius: 0.8rem; 
-        border-top-left-radius: 0.8rem;
-        height: 2.5rem;
+        //border-bottom: solid 3px #6A2EEB;
+        box-shadow:  3px 2px 4px #000000;
+        background-color: #6A2EEB;
+        color: #FFFFFF;
+        border-radius: 0.8rem; 
+        height: 5rem;
         justify-content: center;
         align-items: center;
         display: flex;
-        padding: 0.5rem;
+        padding: 1rem;
+        text-decoration: none;
         //align-items: ;
-        //max-lines: 1;
+        //max-lines: 2;
 
+    }
+
+    .course-header:hover{
+        text-shadow:  1px 1px 2px #FFFFFF;
+        //color:#9166ED;
     }
 
     .course-info{
@@ -72,14 +80,14 @@
 @media screen and (min-width: 1024px) {
     .CourseCard{
         //padding-top: 0rem;
-        min-width: 40rem;
-        max-width: 40rem;
-        box-shadow:  3px 2px 4px #000000;
+        min-width: fit-content;
+        max-width: fit-content;
+        //box-shadow:  3px 2px 4px #000000;
 
         .course-desc{
             font-size: calc(10px + 0.8vmin);
             //height: 20vh;
-            padding: 0rem 1rem;
+            //padding: 0rem 1rem;
             p { 
                 //max-lines: 3;
                 display: -webkit-box;

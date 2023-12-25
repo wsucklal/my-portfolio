@@ -23,9 +23,14 @@ const CourseList = (props) => {
     courseList.push(<CourseCard name={c.name} desc={c.desc} link={c.link} />)
   })
 
+  //Split Array in half for display
+  let firstRow =  courseList.splice(0,courseList.length/2)
+  let secondRow =  courseList.splice(courseList.length/2,courseList.length)
+
   return(
     <div className="CourseList" data-testid="CourseList">
-      {courseList}
+      <div className="courseList-content courseList-firstrow">{firstRow}</div>
+      <div className="courseList-content courseList-secondrow">{secondRow}</div>
     </div>
   );
 };

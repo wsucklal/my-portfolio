@@ -50,12 +50,12 @@ const AcademicCourse = () => {
             {open2023 ? <CourseList year= {2023}/> : <div></div>}
         </div>
         <div className="academic-courses-content">
-        <div className="academic-courses-header" onClick={handleOpen2022}>2021 <img className={open2022? 'selected': null} src="/assets/images/dropdown.png"></img></div>
-            {open2022 ? <CourseList year= {2021}/> : <div></div>}
+        <div className="academic-courses-header" onClick={handleOpen2021}>2021 <img className={open2021? 'selected': null} src="/assets/images/dropdown.png"></img></div>
+            {open2021 ? <CourseList year= {2021}/> : <div></div>}
         </div>
         <div className="academic-courses-content">
-        <div className="academic-courses-header" onClick={handleOpen2021}>2020 <img className={open2021? 'selected': null} src="/assets/images/dropdown.png"></img></div>
-            {open2021 ? <CourseList year= {2020}/> : <div></div>}
+        <div className="academic-courses-header" onClick={handleOpen2020}>2020 <img className={open2020? 'selected': null} src="/assets/images/dropdown.png"></img></div>
+            {open2020 ? <CourseList year= {2020}/> : <div></div>}
         </div>
         {/* <div className="academic-courses-content academic-courses-header">
         <div onClick={handleOpen2020}>2019 <img className={open2020? 'selected': null} src="/assets/images/dropdown.png"></img></div>
