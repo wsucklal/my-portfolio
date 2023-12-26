@@ -1,0 +1,58 @@
+.ScrollBanner {
+
+    display: flex;
+    flex-direction: row;
+    width: -moz-available;   /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    box-shadow: 2px 2px 4px #9166ED;
+    padding: 0.8rem;
+    border: solid 3px #9166ED;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    .scroll-banner-ctnt{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        column-gap: 2rem;
+        //background-color: #9166ED;
+        width: -moz-available;   /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 30s linear infinite;
+        -webkit-animation: my-animation 30s linear infinite;
+        animation: my-animation 30s linear infinite;
+
+    }
+    
+
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}

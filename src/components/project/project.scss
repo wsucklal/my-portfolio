@@ -5,24 +5,51 @@
     width: 100%;
     width: -moz-available;   /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
-    height: 50vh;
+    min-height: 65vh;
+    height: fit-content;
+
     padding-top: 5rem;
-    box-shadow: 2px 2px 4px #000000;
+    //box-shadow: 2px 2px 4px #000000;
 
     //padding-top: 5rem;
 
     .project-panel{
         display: flex;
-        flex-direction: row;
-        box-shadow: 2px 2px 4px #000000;
+        flex-direction: column;
+        //box-shadow: 2px 2px 4px #000000;
         padding: 1rem;
         border-radius: 2rem;
+        row-gap: 1rem;
         //background-color: #6A2EEB;
+
+    }
+
+    .project-display-tech{
+        box-shadow: 2px 2px 4px #000000;
+        border-radius: 0.8rem;
+
+    }
+
+    .project-header-content{
+        
+        color: #6A2EEB;
+        font-size: calc(10px + 4vmin);
+        text-shadow: 2px 2px 4px #000000;
 
     }
     .project-panel-ctnt{
         display: flex;
         flex-direction: column;
+    }
+
+    .project-scroll-banner{
+        //box-shadow: 2px 2px 4px #000000;
+    }
+
+    .project-searchbar{
+        padding: 0.4rem;
+        border:#6A2EEB 0.2rem solid;
+        border-radius: 0.6rem;
     }
 
 }
