@@ -56,3 +56,35 @@
     padding: 0.8rem;
   }
 }
+
+.section {
+  transition: opacity 0.5s ease-in;
+  transition-property: transform, opacity;
+  transition-timing-function: linear;
+  transform: translateY(50px);
+  }
+  
+  .fadeOut  { 
+      opacity: 0; 
+      /* transform: translateY(50px); */
+      /* transition: opacity 0.5s ease-in;
+      transition-property: transform, opacity;
+      transition-timing-function: linear; */
+  }
+  .fadeIn  { 
+    opacity: 1; 
+    transform: none;
+  }
+/* 
+  .fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: linear;
+  }
+
+  .in-view {
+      transform: none;
+      opacity: 1;
+  } */

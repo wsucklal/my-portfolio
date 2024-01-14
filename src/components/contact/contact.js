@@ -2,8 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './contact.scss';
 
-const Contact = () => (
+const Contact = () => {
+
+      // //fading in and out
+      // const observerOptions = {
+      //   root: null,
+      //   threshold: 0.7,
+      //   rootMargin: "0px",
+      // };  
+    
+      // function observerCallback(entries, observer) {
+      //   entries.forEach(entry => {
+      //     if (entry.isIntersecting) {
+      //       // fade in observed elements that are in view
+      //       entry.target.classList.replace('fadeOut', 'fadeIn');
+      //     } else {
+      //       // fade out observed elements that are not in view
+      //       entry.target.classList.replace('fadeIn', 'fadeOut');
+      //     }
+      //   });
+      // }
+    
+      // const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+      // const fadeElms = document.querySelectorAll('.section');
+      // fadeElms.forEach(el => observer.observe(el));
+
+  return(
   <div id="Contact" className="Contact" data-testid="Contact">
+    <section className="section fadeIn">
     <div className="contact-header contact-content">
         <div className="contact-header-content">
           Contacts
@@ -35,8 +62,9 @@ const Contact = () => (
         </a>
       </div>
     </div>
+    </section>
   </div>
-);
+)};
 
 Contact.propTypes = {};
 

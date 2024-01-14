@@ -37,11 +37,40 @@ const AcademicCourse = () => {
     setOpen2021(false);
 
   };
+
+    // //fading in and out
+    // const observerOptions = {
+    //   root: null,
+    //   threshold: 0.5,
+    //   rootMargin: "0px",
+    // };  
+  
+    // function observerCallback(entries, observer) {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       // fade in observed elements that are in view
+    //       entry.target.classList.replace('fadeOut', 'fadeIn');
+    //     } else {
+    //       // fade out observed elements that are not in view
+    //       entry.target.classList.replace('fadeIn', 'fadeOut');
+    //     }
+    //   });
+    // }
+  
+    // const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+    // const fadeElms = document.querySelectorAll('.section');
+    // fadeElms.forEach(el => observer.observe(el));
+
   return(
     <div id="AcademicCourse" className="AcademicCourse" data-testid="AcademicCourse">
+      <section className ="section fadeIn">
       <div className="academic-header academic-content">
         <div className="academic-header-content">
           Academic Courses
+        </div>
+        <div className="academic-header-desc"> 
+          Here are a few of the most relavent courses I've taken over the years in my undergraduate degree. Each course card is linked to the course information if you'd like to learn more about details of the course. 
         </div>
       </div>
       <div className="academic-courses academic-content">
@@ -62,6 +91,7 @@ const AcademicCourse = () => {
             {open2020 ? <CourseList year= {2019}/> : <div></div>}
         </div> */}
       </div>
+      </section>
     </div>
   );
 };

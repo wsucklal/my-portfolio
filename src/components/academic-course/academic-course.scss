@@ -10,7 +10,9 @@
     padding: 1rem;
     padding-top: 5rem;
     //box-shadow: 2px 2px 4px #000000;
-
+    section{
+        row-gap: 1rem;
+    }
     .academic-header-content{
         
         color: #6A2EEB;
@@ -26,7 +28,8 @@
         row-gap: 1rem;
         border: solid 3px #9166ED;
         border-radius: 0.8rem;
-        padding: 1rem
+        padding: 1rem;
+        width: -webkit-fill-available;
     }
     .academic-courses-content{
         display: flex;
@@ -54,4 +57,34 @@
     img.selected{
         transform: rotate(180deg);
     }
+
+    .academic-header-desc{
+        padding-bottom: 1rem;
+    }
+    
+    // .section {
+    //     transition: opacity 0.5s ease-in;
+    //     transition-property: transform, opacity;
+    //     transition-timing-function: linear;
+    //     // transform: translateY(50px);
+    //     }
+        
+    //     .fadeOut { 
+    //         opacity: 0; 
+    //         transform: translateY(50px);
+    //     }
+    //     .fadeIn { opacity: 1; }
+    
+    //     .fadeup {
+    //     transform: translateY(50px);
+    //     opacity: 0;
+    //     transition-property: transform, opacity;
+    //     transition-duration: 0.7s;
+    //     transition-timing-function: linear;
+    //     }
+    
+    //     .in-view {
+    //         transform: none;
+    //         opacity: 1;
+    //     }
 }
