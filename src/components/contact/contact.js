@@ -2,8 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './contact.scss';
 
-const Contact = () => (
-  <div className="Contact" data-testid="Contact">
+const Contact = () => {
+
+      // //fading in and out
+      // const observerOptions = {
+      //   root: null,
+      //   threshold: 0.7,
+      //   rootMargin: "0px",
+      // };  
+    
+      // function observerCallback(entries, observer) {
+      //   entries.forEach(entry => {
+      //     if (entry.isIntersecting) {
+      //       // fade in observed elements that are in view
+      //       entry.target.classList.replace('fadeOut', 'fadeIn');
+      //     } else {
+      //       // fade out observed elements that are not in view
+      //       entry.target.classList.replace('fadeIn', 'fadeOut');
+      //     }
+      //   });
+      // }
+    
+      // const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+      // const fadeElms = document.querySelectorAll('.section');
+      // fadeElms.forEach(el => observer.observe(el));
+
+  return(
+  <div id="Contact" className="Contact" data-testid="Contact">
+    <section className="section fadeIn">
     <div className="contact-header contact-content">
         <div className="contact-header-content">
           Contacts
@@ -14,29 +41,30 @@ const Contact = () => (
         <div className=" contact-link-pic">
           <img src="/assets/images/linkedInLogo.png"></img>
         </div>
-        <div className="contact-link-text">
+        <a href='https://www.linkedin.com/in/warren-sucklal/' target="_blank" className="contact-link-text">
           LinkedIn
-        </div>
+        </a>
       </div>
       <div className="contact-link-content">
         <div className=" contact-link-pic">
           <img src="/assets/images/Mail.png"></img>
         </div>
-        <div className=" contact-link-text">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=warrensucklal@gmail.com" target="_blank" className=" contact-link-text">
           Send An Email
-        </div>
+        </a>
       </div>
       <div className="contact-link-content">
         <div className=" contact-link-pic">
           <img src="/assets/images/Github.png"></img>
         </div>
-        <div className=" contact-link-text">
+        <a href='https://github.com/wsucklal' target="_blank" className="  contact-link-text">
           Github
-        </div>
+        </a>
       </div>
     </div>
+    </section>
   </div>
-);
+)};
 
 Contact.propTypes = {};
 

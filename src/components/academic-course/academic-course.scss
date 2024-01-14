@@ -5,23 +5,49 @@
     width: -moz-available;   /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
     row-gap: 1rem;
-    height: 80vh;
+    min-height: 50vh;
+    height: fit-content;
     padding: 1rem;
-
+    padding-top: 5rem;
+    //box-shadow: 2px 2px 4px #000000;
+    section{
+        row-gap: 1rem;
+    }
     .academic-header-content{
+        
         color: #6A2EEB;
         font-size: calc(10px + 4vmin);
+        text-shadow: 2px 2px 4px #000000;
+
     }
 
     .academic-courses{
+        box-shadow:  2px 2px 4px #000000;
         display: inline-flex;
         flex-direction: column;
-        row-gap: 1rem
+        row-gap: 1rem;
+        border: solid 3px #9166ED;
+        border-radius: 0.8rem;
+        padding: 1rem;
+        width: -webkit-fill-available;
     }
     .academic-courses-content{
         display: flex;
         flex-direction: column;
-        color: #9166ED;
+        color: #FFFFFF;
+    }
+
+    .academic-courses-header{
+        background-color: #4709CD;
+        border-radius: 8px;
+        text-shadow: 1px 1px 2px #000000;
+        box-shadow:  2px 2px 4px #000000;
+    }
+
+
+    .academic-courses-header:hover{
+        text-shadow: 1px 1px 2px #FFFFFF;
+
     }
 
     img{
@@ -31,4 +57,34 @@
     img.selected{
         transform: rotate(180deg);
     }
+
+    .academic-header-desc{
+        padding-bottom: 1rem;
+    }
+    
+    // .section {
+    //     transition: opacity 0.5s ease-in;
+    //     transition-property: transform, opacity;
+    //     transition-timing-function: linear;
+    //     // transform: translateY(50px);
+    //     }
+        
+    //     .fadeOut { 
+    //         opacity: 0; 
+    //         transform: translateY(50px);
+    //     }
+    //     .fadeIn { opacity: 1; }
+    
+    //     .fadeup {
+    //     transform: translateY(50px);
+    //     opacity: 0;
+    //     transition-property: transform, opacity;
+    //     transition-duration: 0.7s;
+    //     transition-timing-function: linear;
+    //     }
+    
+    //     .in-view {
+    //         transform: none;
+    //         opacity: 1;
+    //     }
 }

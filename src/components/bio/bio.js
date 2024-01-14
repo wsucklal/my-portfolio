@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './bio.scss';
 
+
+
+
 const Bio = () => (
-  <div className="Bio" data-testid="Bio">
+  <div id="Bio" className="Bio" data-testid="Bio">
     <div className="bio-pic bio-content">
       <div className="bio-pic-content">
         <img src="https://media.licdn.com/dms/image/C5603AQFgU7JukkXBbw/profile-displayphoto-shrink_400_400/0/1609145713918?e=1705536000&v=beta&t=VqeYvdOZDJ2QI8NjqgZczpQC6EppHjDOhe08ndhuhFQ"></img>
@@ -11,7 +14,12 @@ const Bio = () => (
     </div>
     <div className="bio-text bio-content">
       <div className="bio-text-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Egestas sed sed risus pretium quam vulputate. Dictumst vestibulum rhoncus est pellentesque elit. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Et sollicitudin ac orci phasellus egestas tellus rutrum. Massa sapien faucibus et molestie ac. Lorem sed risus ultricies tristique nulla. Et leo duis ut diam. Enim blandit volutpat maecenas volutpat blandit. Facilisis gravida neque convallis a cras. Id velit ut tortor pretium. Facilisis volutpat est velit egestas dui.</p>
+        <p>Hi, I'm Warren! I am a young software engineer student who is passionate about critical thinking, reasoning and coding. My brain is always trying to solve problems thanks to a curious mind. I have always been a logical, hands on, problem solver since I was about 5 years old starting with Lego, sports, math, science, and now my life long passion as a software engineer. Hope you enjoy the rest of my page and feel free to <a className='bio-text-reachout' href='#Contact'>reach out to me</a> if you have any questions. You can find my resume just below which has more details about my experiences. Thanks again!</p>
+        <div className='bio-text-btn'>
+          <a href="/assets/documents/Resume-Warren.pdf" download = "Resume-Warren.pdf" id="" className="bio-btn-content">
+            Resume - PDF 
+          </a>
+        </div>
       </div>
     </div>
   </div>

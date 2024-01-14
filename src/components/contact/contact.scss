@@ -1,12 +1,16 @@
 .Contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 120%;
     width: -moz-available;   /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
     padding: 2rem;
     row-gap: 2rem;
-    height: 80vh;
+    height: fit-content;
+    min-height: 65vh;
+    padding-top: 5rem;
+    text-shadow: 2px 2px 4px #000000;
+    //box-shadow: 2px 2px 4px #000000;
 
     .contact-content{
         //padding: 1rem;
@@ -20,6 +24,7 @@
     .contact-header-content{
         color: #6A2EEB;
         font-size: calc(10px + 4vmin);
+        text-shadow: 2px 2px 4px #000000;
     }
     .contact-link{
         display: flex;
@@ -32,6 +37,7 @@
         flex-direction: row;
         align-items: center;
         column-gap: 2rem;
+        transition: 0.2s;
     }
 
     .contact-link-pic{
@@ -48,15 +54,37 @@
     }
 
     .contact-link-text{
-        color: #9166ED;
+        color: #6A2EEB;
         font-size: calc(10px + 3vmin);
+        text-decoration: none;
     }
 
+    .contact-link-content:hover{
+        //background-color: #9166ED;
+        text-shadow: 2px 2px 4px #9166ED;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 2px 2px 4px #000000;
+    }
+    
 }
+
+
+    /* MOBILE*/
+    @media screen and (max-width: 1023px) {
+        .Contact {
+        /* font-size: 18px; */
+            height: 40vh;
+        }
+    }
 
     //DESKTOP
     @media screen and (min-width: 1024px) {
+        .Contact{
+            padding-top: 10rem;
+        }
         .contact-link{
             padding-left: 8rem;
         }
     }
+    

@@ -7,6 +7,9 @@
     position: fixed;
     top: 0.5rem;
     width: calc(100% - 1rem);
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
+    z-index: 100;
 
     .nav-content{
      padding: 0.5rem;
@@ -32,9 +35,16 @@
     .nav-btn{
         border: 0.15rem solid #9166ED;
         border-radius: 0.6rem;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: 0.2s;
+        box-shadow: 2px 2px 4px #000000;
+
     }
     .nav-btn:hover{
         background-color: #9166ED;
+        box-shadow: 1px 1px 2px #9166ED;
+        text-shadow: 1px 1px 2px #FFFFFF;
         //color:#4709CD;
     }
 
