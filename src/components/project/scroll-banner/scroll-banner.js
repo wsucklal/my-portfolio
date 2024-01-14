@@ -21,7 +21,6 @@ const ScrollBanner = (props) => {
   );
 };
 
-ScrollBanner.propTypes = {};
 
 ScrollBanner.defaultProps = {};
 

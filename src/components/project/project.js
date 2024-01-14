@@ -12,7 +12,6 @@ const Project = () => {
 
   let projList = []
 
-  const [filteredProjList,setFilteredProjList] =  useState(projList)
   const [displayResult, setDisplayResult] = useState([])
   const [searchWord, setWord ] = useState("")
   const [type, setType] =  useState("all")
