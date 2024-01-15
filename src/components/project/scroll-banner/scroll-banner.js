@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './scroll-banner.scss';
 import ScrollCard from './scroll-card/scroll-card'
 

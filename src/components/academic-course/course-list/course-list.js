@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './course-list.scss';
 import coursesJOSN from './courses.json'
 import CourseCard from './course-card/course-card'

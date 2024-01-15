@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './course-card.scss';
 
 const CourseCard = (props) => (
@@ -13,8 +12,6 @@ const CourseCard = (props) => (
     </div> */}
   </div>
 );
-
-CourseCard.propTypes = {};
 
 CourseCard.defaultProps = {};
 

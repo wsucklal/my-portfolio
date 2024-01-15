@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './contact.scss';
 
 const Contact = () => {
@@ -65,8 +64,6 @@ const Contact = () => {
     </section>
   </div>
 )};
-
-Contact.propTypes = {};
 
 Contact.defaultProps = {};
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import './project.scss';
 import ScrollCard from './scroll-banner/scroll-card/scroll-card';
 
