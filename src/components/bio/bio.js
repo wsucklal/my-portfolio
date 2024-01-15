@@ -25,8 +25,6 @@ const Bio = () => (
   </div>
 );
 
-Bio.propTypes = {};
-
 Bio.defaultProps = {};
 
 export default Bio;

@@ -13,8 +13,6 @@ const ScrollCard = (props) => (
   </a>
 );
 
-ScrollCard.propTypes = {};
-
 ScrollCard.defaultProps = {};
 
 export default ScrollCard;
