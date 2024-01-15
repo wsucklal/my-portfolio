@@ -128,8 +128,14 @@
         //width: -webkit-fill-available;
        // background-color: #6A2EEB;
         //align-self: flex-start;
+        background-color: transparent;
+        border: none;
         padding-left: 0.8rem;
         white-space: nowrap;
+        color: #FFFFFF;
+    }
+    .clearResult:hover{
+        text-shadow: 1px 1px 2px #FFFFFF;
     }
 
     .pagination{

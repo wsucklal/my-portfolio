@@ -50,7 +50,7 @@ const Project = () => {
 
     event ? searchValue = event.target.value : searchValue = searchWord
     keySearch = [type]
-    type == 'all' ? keySearch = ['language', 'createdAt', 'name'] : keySearch = [type]
+    type === 'all' ? keySearch = ['language', 'createdAt', 'name'] : keySearch = [type]
 
     // console.log(event.target.value)
     // console.log(1,keySearch,searchValue)
@@ -62,9 +62,7 @@ const Project = () => {
         test2 =  array.filter(item => {
           // Check each property of the object
           for (const key in item) {
-            // If the property contains the search value, return true
-            const propertyValue = String(item[key]).toLowerCase();
-            const searchLower = searchValue.toLowerCase();
+
             if (keySearch.includes(key)) {
               // Perform a case-insensitive search
               const propertyValue = String(item[key]).toLowerCase();
@@ -82,7 +80,7 @@ const Project = () => {
             displayArray.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
         })
       }
-      if(event.target.value == ''){
+      if(event.target.value === ''){
         setCurrentPage(1)
       }
     }
@@ -98,7 +96,7 @@ const Project = () => {
 
     event ? keySearch = event.target.value : keySearch = type
     searchValue = searchWord
-    event.target.value == 'all' ? keySearch = ['language', 'createdAt', 'name'] : keySearch = [event.target.value]
+    event.target.value === 'all' ? keySearch = ['language', 'createdAt', 'name'] : keySearch = [event.target.value]
     //console.log("yes", keySearch)
     // console.log(event.target.value)
     // console.log(1,keySearch,searchValue)
@@ -163,7 +161,7 @@ const Project = () => {
           }
           { (searchWord !== '' && displayResult.length >= itemsPerPage)&& 
             <div className="resultsBar">
-              <a onClick={clearResult} className='clearResult'>Clear Results</a>
+              <button onClick={clearResult} href=""className='clearResult'>Clear Results</button>
               <div className="pagination">
                   <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
                   <img alt="" className="imgLeft" src="/assets/images/dropdown.png"></img>                  
@@ -175,7 +173,7 @@ const Project = () => {
               </div>
             </div>
           }
-          {searchWord !== '' && displayResult.length == 0 && 
+          {searchWord !== '' && displayResult.length === 0 && 
             <div className="noresults">Sorry, No search results found! </div>
           }
           <div>

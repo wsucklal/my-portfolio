@@ -9,15 +9,15 @@ const Footer = () => (
       </div>
       <div className='footer-prj-stack'>
         <div className='footer-prj-stack-ctnt'>
-          <a  target="_blank" href='https://react.dev/'>React.js</a>
+          <a  rel="noreferrer" target="_blank" href='https://react.dev/'>React.js</a>
         </div>
         <div className='footer-prj-stack-ctnt'>
-          <a  target="_blank" href='https://www.figma.com/file/TCZWWVpMzsoAtYVERRO4FR/Portfolio-Design?type=design&mode=design&t=GVcu4f5vBETU7Xmr-1'>
+          <a rel="noreferrer" target="_blank" href='https://www.figma.com/file/TCZWWVpMzsoAtYVERRO4FR/Portfolio-Design?type=design&mode=design&t=GVcu4f5vBETU7Xmr-1'>
             Figma Design
           </a>
         </div>
         <div className='footer-prj-stack-ctnt'>
-          <a  target="_blank" href='https://github.com/wsucklal/my-portfolio'>Github Repository</a>
+          <a  rel="noreferrer" target="_blank" href='https://github.com/wsucklal/my-portfolio'>Github Repository</a>
         </div>
       </div>
     </div>

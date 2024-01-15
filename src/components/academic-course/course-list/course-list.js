@@ -17,6 +17,8 @@ const CourseList = (props) => {
     case 2020:
       courses = coursesJOSN.courses2020.courses
     break
+    default:
+      
   }
   courses.forEach((c) =>{
     courseList.push(<CourseCard name={c.name} desc={c.desc} link={c.link} />)
