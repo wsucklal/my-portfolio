@@ -21,8 +21,6 @@ const Navbar = () => (
   </div>
 );
 
-Navbar.propTypes = {};
-
 Navbar.defaultProps = {};
 
 export default Navbar;

@@ -28,7 +28,6 @@ const Footer = () => (
   </div>
 );
 
-Footer.propTypes = {};
 
 Footer.defaultProps = {};
 
