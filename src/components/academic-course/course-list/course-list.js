@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './course-list.scss';
 import coursesJOSN from './courses.json'
 import CourseCard from './course-card/course-card'
@@ -18,6 +17,8 @@ const CourseList = (props) => {
     case 2020:
       courses = coursesJOSN.courses2020.courses
     break
+    default:
+      
   }
   courses.forEach((c) =>{
     courseList.push(<CourseCard name={c.name} desc={c.desc} link={c.link} />)
