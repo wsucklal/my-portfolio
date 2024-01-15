@@ -167,11 +167,11 @@ const Project = () => {
               <a onClick={clearResult} className='clearResult'>Clear Results</a>
               <div className="pagination">
                   <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-                  <img className="imgLeft" src="/assets/images/dropdown.png"></img>                  
+                  <img alt="" className="imgLeft" src="/assets/images/dropdown.png"></img>                  
                   </button>
                 <span> {currentPage}-{totalPages}</span>
                 <button onClick={() => handlePageChange(currentPage + 1)} disabled={endIndex >= displayResult.length}>
-                <img className="imgRight" src="/assets/images/dropdown.png"></img>                  
+                <img alt="" className="imgRight" src="/assets/images/dropdown.png"></img>                  
                 </button>
               </div>
             </div>
