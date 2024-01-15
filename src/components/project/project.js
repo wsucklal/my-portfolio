@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './project.scss';
 import ScrollCard from './scroll-banner/scroll-card/scroll-card';
 
@@ -10,6 +10,14 @@ const json = await response.json()
 const Project = () => {
 
   let projList = []
+  let startProjlist = []
+
+  useEffect(()=>{
+    projList.forEach((p)=>{
+      startProjlist.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+    })
+    setDisplayResult(startProjlist)
+  },[]);
 
   const [displayResult, setDisplayResult] = useState([])
   const [searchWord, setWord ] = useState("")
@@ -154,12 +162,17 @@ const Project = () => {
               <option value="name">Name</option>
             </select>
           </div>
-          { (searchWord !== '' && displayResult.length !== 0)&& 
+          { (searchWord == '' && displayResult.length !== 0)&& 
             <div className="displayResults">
-            {currentItems}{console.log(displayResult.length)}
+            {currentItems}
             </div>
           }
-          { (searchWord !== '' && displayResult.length >= itemsPerPage)&& 
+          { (searchWord !== '' && displayResult.length !== 0)&& 
+            <div className="displayResults">
+            {currentItems}
+            </div>
+          }
+          { (displayResult.length >= itemsPerPage)&& 
             <div className="resultsBar">
               <button onClick={clearResult} href=""className='clearResult'>Clear Results</button>
               <div className="pagination">
