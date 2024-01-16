@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './project.scss';
 import ScrollCard from './scroll-banner/scroll-card/scroll-card';
 
@@ -21,20 +21,17 @@ const Project = () => {
   json.forEach((p)=>{
     projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
   })
-  const setStartProjlist = ()=>{
-    let t = []
-    projList.forEach((p)=>{
-      t.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
-    })
-    return t 
-  }
+  // const setStartProjlist = ()=>{
+  //   let t = []
+  //   projList.forEach((p)=>{
+  //     t.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+  //   })
+  //   return t 
+  // }
 
-  let startProjlist = setStartProjlist()
-  //
-
- useEffect(()=>{
-  setDisplayResult(startProjlist)
-  },[startProjlist]);
+//  useEffect(()=>{
+//   setDisplayResult(setStartProjlist())
+//   },);
 
 
 
@@ -176,11 +173,11 @@ const Project = () => {
               <option value="name">Name</option>
             </select>
           </div>
-          { (searchWord === '' && displayResult.length !== 0)&& 
+          {/* { (searchWord === '' && displayResult.length !== 0)&& 
             <div className="displayResults">
-            {currentItems}
+            {displayResult}{console.log(displayResult.length)}
             </div>
-          }
+          } */}
           { (searchWord !== '' && displayResult.length !== 0)&& 
             <div className="displayResults">
             {currentItems}
