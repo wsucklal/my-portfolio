@@ -10,14 +10,19 @@ const json = await response.json()
 const Project = () => {
 
   let projList = []
-  let startProjlist = []
+  //const [projList, setProjList ] = useState()
+  const [startProjlist, setStartProjlist ] = useState([])
 
-  useEffect(()=>{
-    projList.forEach((p)=>{
-      startProjlist.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
-    })
+  json.forEach((p)=>{
+    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
+  })
+  projList.forEach((p)=>{
+    startProjlist.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+  })
+
+ useEffect(()=>{
     setDisplayResult(startProjlist)
-  },[]);
+  },[startProjlist]);
 
   const [displayResult, setDisplayResult] = useState([])
   const [searchWord, setWord ] = useState("")
@@ -42,13 +47,7 @@ const Project = () => {
     setWord('');
     setCurrentPage(1)
     document.getElementById("mySearch").value = ''
-    console.log(event.target.value)
   };
-
-  json.forEach((p)=>{
-    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
-  })
-
 
   function filter(event, searchValue , keySearch) {
     let test2
@@ -153,6 +152,11 @@ const Project = () => {
         </div>
       <div className='project-panel-ctnt'>
         <div className='project-display-tech'>
+        <div className='project-panel-ctnt project-scroll-banner'>
+              <div div className='project-scroll-banner-ctnt'>
+                {<ScrollBanner projects={projList}/>}
+              </div>
+        </div> 
           <div className='project-searchbar'>
             <input className="search-input" id="mySearch"type='search' placeholder='Search...' onChange={filter}/>
             <select className="dropdown" value={type} onChange={filterByDropdown}>
@@ -162,7 +166,7 @@ const Project = () => {
               <option value="name">Name</option>
             </select>
           </div>
-          { (searchWord == '' && displayResult.length !== 0)&& 
+          { (searchWord === '' && displayResult.length !== 0)&& 
             <div className="displayResults">
             {currentItems}
             </div>
@@ -189,13 +193,8 @@ const Project = () => {
           {searchWord !== '' && displayResult.length === 0 && 
             <div className="noresults">Sorry, No search results found! </div>
           }
-          <div>
-            <div className='project-panel-ctnt project-scroll-banner'>
-              <div div className='project-scroll-banner-ctnt'>
-                {<ScrollBanner projects={projList}/>}
-              </div>
-            </div>          
-            </div>
+          <div>         
+          </div>
         </div>
       </div>
     </div>

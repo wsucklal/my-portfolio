@@ -6,6 +6,8 @@ import './bio.scss';
 
 const Bio = () => (
   <div id="Bio" className="Bio" data-testid="Bio">
+    {/* <section className="section fadeIn">
+    </section */}
     <div className="bio-pic bio-content">
       <div className="bio-pic-content">
         <img alt='' src="https://media.licdn.com/dms/image/C5603AQFgU7JukkXBbw/profile-displayphoto-shrink_400_400/0/1609145713918?e=1705536000&v=beta&t=VqeYvdOZDJ2QI8NjqgZczpQC6EppHjDOhe08ndhuhFQ"></img>
