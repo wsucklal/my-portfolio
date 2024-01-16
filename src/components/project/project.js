@@ -11,22 +11,32 @@ const Project = () => {
 
   let projList = []
   //const [projList, setProjList ] = useState()
-  const [startProjlist, setStartProjlist ] = useState([])
+  // const [startProjlist, setStartProjlist ] = useState([])
 
-  json.forEach((p)=>{
-    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
-  })
-  projList.forEach((p)=>{
-    startProjlist.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
-  })
-
- useEffect(()=>{
-    setDisplayResult(startProjlist)
-  },[startProjlist]);
 
   const [displayResult, setDisplayResult] = useState([])
   const [searchWord, setWord ] = useState("")
   const [type, setType] =  useState("all")
+
+  json.forEach((p)=>{
+    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
+  })
+  const setStartProjlist = ()=>{
+    let t = []
+    projList.forEach((p)=>{
+      t.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+    })
+    return t 
+  }
+
+  let startProjlist = setStartProjlist()
+  //
+
+ useEffect(()=>{
+  setDisplayResult(startProjlist)
+  },[startProjlist]);
+
+
 
   const itemsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
