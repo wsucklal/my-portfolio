@@ -30,8 +30,12 @@ const Project = () => {
   // }
 
 //  useEffect(()=>{
-//   setDisplayResult(setStartProjlist())
-//   },);
+//   let t = []
+//   projList.forEach((p)=>{
+//     t.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+//   })
+//   setDisplayResult()
+//   },[]);
 
 
 

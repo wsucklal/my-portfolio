@@ -1,58 +1,101 @@
-.ScrollBanner {
+// .ScrollBanner {
 
+//     display: flex;
+//     flex-direction: row;
+//     width: -moz-available;   /* WebKit-based browsers will ignore this. */
+//     width: -webkit-fill-available;
+//     //box-shadow: 2px 2px 4px #9166ED;
+//     padding: 0.8rem;
+//     border: solid 0.2rem #6A2EEB;
+//     border-radius: 0.8rem;
+//     overflow: hidden;
+
+//     .scroll-banner-ctnt{
+//         display: flex;
+//         flex-direction: row;
+//         position: relative;
+//         column-gap: 2rem;
+//         //background-color: #9166ED;
+//         width: -moz-available;   /* WebKit-based browsers will ignore this. */
+//         width: -webkit-fill-available;
+//         /* animation properties */
+//         -moz-transform: translateX(100%);
+//         -webkit-transform: translateX(100%);
+//         transform: translateX(100%);
+        
+//         -moz-animation: my-animation 15s linear infinite;
+//         -webkit-animation: my-animation 15s linear infinite;
+//         animation: my-animation 15s linear infinite;
+
+//     }
+    
+
+// }
+
+// /* for Firefox */
+// @-moz-keyframes my-animation {
+//     from { -moz-transform: translateX(100%); }
+//     to { -moz-transform: translateX(-100%); }
+//   }
+  
+//   /* for Chrome */
+//   @-webkit-keyframes my-animation {
+//     from { -webkit-transform: translateX(100%); }
+//     to { -webkit-transform: translateX(-100%); }
+//   }
+  
+//   @keyframes my-animation {
+//     from {
+//       -moz-transform: translateX(100%);
+//       -webkit-transform: translateX(100%);
+//       transform: translateX(100%);
+//     }
+//     to {
+//       -moz-transform: translateX(-100%);
+//       -webkit-transform: translateX(-100%);
+//       transform: translateX(-100%);
+//     }
+// }
+
+/* Carousel.css */
+.carousel-container {
+  overflow: hidden;
     display: flex;
     flex-direction: row;
-    width: -moz-available;   /* WebKit-based browsers will ignore this. */
+    width: -moz-available;
     width: -webkit-fill-available;
     //box-shadow: 2px 2px 4px #9166ED;
     padding: 0.8rem;
     border: solid 0.2rem #6A2EEB;
     border-radius: 0.8rem;
     overflow: hidden;
-
-    .scroll-banner-ctnt{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        column-gap: 2rem;
-        //background-color: #9166ED;
-        width: -moz-available;   /* WebKit-based browsers will ignore this. */
-        width: -webkit-fill-available;
-        /* animation properties */
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        
-        -moz-animation: my-animation 15s linear infinite;
-        -webkit-animation: my-animation 15s linear infinite;
-        animation: my-animation 15s linear infinite;
-
-    }
-    
-
 }
 
-/* for Firefox */
-@-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
+.carousel {
+  display: flex;
+  column-gap: 2rem;
+  animation: scrollAnimation 45s linear infinite; /* Adjust the duration as needed */
 }
+
+.carousel-item {
+  min-width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  transform: translateX(-100%);
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
