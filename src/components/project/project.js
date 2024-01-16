@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './project.scss';
 import ScrollCard from './scroll-banner/scroll-card/scroll-card';
 
@@ -10,10 +10,33 @@ const json = await response.json()
 const Project = () => {
 
   let projList = []
+  //const [projList, setProjList ] = useState()
+  // const [startProjlist, setStartProjlist ] = useState([])
+
 
   const [displayResult, setDisplayResult] = useState([])
   const [searchWord, setWord ] = useState("")
   const [type, setType] =  useState("all")
+
+  json.forEach((p)=>{
+    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
+  })
+  const setStartProjlist = ()=>{
+    let t = []
+    projList.forEach((p)=>{
+      t.push(<ScrollCard name={p.name} createdAt={p.createdAt} language = {p.language} url={p.url}></ScrollCard>)
+    })
+    return t 
+  }
+
+  let startProjlist = setStartProjlist()
+  //
+
+ useEffect(()=>{
+  setDisplayResult(startProjlist)
+  },[startProjlist]);
+
+
 
   const itemsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,13 +57,7 @@ const Project = () => {
     setWord('');
     setCurrentPage(1)
     document.getElementById("mySearch").value = ''
-    console.log(event.target.value)
   };
-
-  json.forEach((p)=>{
-    projList.push({name:p.name,url:p.svn_url,language:p.language, createdAt: p.created_at})
-  })
-
 
   function filter(event, searchValue , keySearch) {
     let test2
@@ -145,6 +162,11 @@ const Project = () => {
         </div>
       <div className='project-panel-ctnt'>
         <div className='project-display-tech'>
+        <div className='project-panel-ctnt project-scroll-banner'>
+              <div div className='project-scroll-banner-ctnt'>
+                {<ScrollBanner projects={projList}/>}
+              </div>
+        </div> 
           <div className='project-searchbar'>
             <input className="search-input" id="mySearch"type='search' placeholder='Search...' onChange={filter}/>
             <select className="dropdown" value={type} onChange={filterByDropdown}>
@@ -154,12 +176,17 @@ const Project = () => {
               <option value="name">Name</option>
             </select>
           </div>
-          { (searchWord !== '' && displayResult.length !== 0)&& 
+          { (searchWord === '' && displayResult.length !== 0)&& 
             <div className="displayResults">
-            {currentItems}{console.log(displayResult.length)}
+            {currentItems}
             </div>
           }
-          { (searchWord !== '' && displayResult.length >= itemsPerPage)&& 
+          { (searchWord !== '' && displayResult.length !== 0)&& 
+            <div className="displayResults">
+            {currentItems}
+            </div>
+          }
+          { (displayResult.length >= itemsPerPage)&& 
             <div className="resultsBar">
               <button onClick={clearResult} href=""className='clearResult'>Clear Results</button>
               <div className="pagination">
@@ -176,13 +203,8 @@ const Project = () => {
           {searchWord !== '' && displayResult.length === 0 && 
             <div className="noresults">Sorry, No search results found! </div>
           }
-          <div>
-            <div className='project-panel-ctnt project-scroll-banner'>
-              <div div className='project-scroll-banner-ctnt'>
-                {<ScrollBanner projects={projList}/>}
-              </div>
-            </div>          
-            </div>
+          <div>         
+          </div>
         </div>
       </div>
     </div>
