@@ -10,7 +10,7 @@ const Bio = () => (
     </section */}
     <div className="bio-pic bio-content">
       <div className="bio-pic-content">
-        <img alt='' src="https://media.licdn.com/dms/image/C5603AQFgU7JukkXBbw/profile-displayphoto-shrink_400_400/0/1609145713918?e=1705536000&v=beta&t=VqeYvdOZDJ2QI8NjqgZczpQC6EppHjDOhe08ndhuhFQ"></img>
+        <img alt='' src="/assets/images/Profile-Pic.jpg"></img>
       </div>
     </div>
     <div className="bio-text bio-content">
